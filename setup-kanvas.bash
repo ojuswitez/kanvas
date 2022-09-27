@@ -84,7 +84,7 @@ function cp_bak {
 }
 
 function run_mintery {
-    git clone https://github.com/tzConnectBerlin/mintery.git "$tmpdir/mintery" || exit 1
+    git clone https://github.com/ojuswitez/mintery.git "$tmpdir/mintery" || exit 1
     export NODE_URL="`take_env NODE_URL global.env`"
 
     if [[ "`take_env NETWORK global.env`" == "mainnet" ]]; then
