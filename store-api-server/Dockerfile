@@ -1,7 +1,7 @@
 # note: expected build context is the git root directory
 FROM node
 ENV DEBIAN_FRONTEND=noninteractive
-ENV NODE_OPTIONS --openssl-legacy-provider
+# ENV NODE_OPTIONS --openssl-legacy-provider
 ENV TZ=UTC
 
 # need psql
