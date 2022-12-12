@@ -110,9 +110,9 @@ export const Footer: FC<FooterProps> = () => {
                     flexDirection: 'column',
                 }}
             >
-                <LinkStyled to="/">
-                    <LogoStyled alt="Logo" src={'/img/Logo.svg'} />
-                </LinkStyled>
+                <Typography size="h3" weight="SemiBold">
+                    Demo Marketplace
+                </Typography>
 
                 <Typography
                     size="body"
@@ -125,27 +125,17 @@ export const Footer: FC<FooterProps> = () => {
                         maxWidth: '11rem',
                     }}
                 >
-                    {t('home.hero.description_1')}
-                </Typography>
+                    This is a demo of the Kanvas boilerplate NFT Marketplace                </Typography>
                 <Box sx={{ marginTop: '.5rem' }}>
                     <Copyright />
                 </Box>
             </Grid>
 
-            <Grid
-                item
-                md={7}
-                lg={6}            
-            >
+            <Grid item md={7} lg={6}>
                 <Grid container columnSpacing={{ xs: 0, sm: 2, md: 3 }}>
                     <Grid item xs={6} md={3}>
-                        <Typography
-                            size="h5"
-                            weight="SemiBold"
-                            gutterBottom
-                        
-                        >
-                            {t('footer.headline_1.title')}
+                        <Typography size="h5" weight="SemiBold" gutterBottom>
+                            Main
                         </Typography>
 
                         <Box
@@ -166,13 +156,8 @@ export const Footer: FC<FooterProps> = () => {
                     </Grid>
 
                     <Grid item xs={6} md={3}>
-                        <Typography
-                            size="h5"
-                            weight="SemiBold"
-                            gutterBottom
-                        
-                        >
-                            {t('footer.headline_2.title')}
+                        <Typography size="h5" weight="SemiBold" gutterBottom>
+                            Abouts Us
                         </Typography>
 
                         <Box
@@ -192,12 +177,7 @@ export const Footer: FC<FooterProps> = () => {
                         </Box>
                     </Grid>
 
-                    <Grid
-                        item
-                        xs={6}
-                        md={3}
-                        sx={{ height: '7rem' }}
-                    >
+                    {/* <Grid item xs={6} md={3} sx={{ height: '7rem' }}>
                         <Typography weight="SemiBold" size="h5" gutterBottom>
                             {t('footer.headline_3.title')}
                         </Typography>
@@ -222,7 +202,7 @@ export const Footer: FC<FooterProps> = () => {
                                 </StyledLink>
                             </Box>
                         </Box>
-                    </Grid>
+                    </Grid> */}
 
                     <Grid item xs={6} md={3}>
                         <Typography weight="SemiBold" size="h5" gutterBottom>
@@ -251,7 +231,7 @@ export const Footer: FC<FooterProps> = () => {
                             <Box
                                 component="a"
                                 target="_blank"
-                                href="https://twitter.com/TZConnectBerlin"
+                                href="https://twitter.com/IndiaTezos"
                                 sx={iconStyle}
                             >
                                 <SocialStyled

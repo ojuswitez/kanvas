@@ -133,7 +133,7 @@ const HomePage: FC<HomePageProps> = () => {
                             weight="SemiBold"
                             sx={{ pt: 2, mb: 1 }}
                         >
-                            {t('home.nfts.headline')}
+                            Trending Now 🔥
                         </Typography>
 
                         <FlexSpacer />
@@ -149,7 +149,7 @@ const HomePage: FC<HomePageProps> = () => {
                     <NftGrid
                         nfts={FeaturedNftsResponse.data?.nfts}
                         loading={FeaturedNftsResponse.loading}
-                        emptyMessage={'No Featured NFTs yet'}
+                        emptyMessage={'No NFTs found'}
                         emptyLink={'See entire collection.'}
                     />
                 </StyledAnimated>

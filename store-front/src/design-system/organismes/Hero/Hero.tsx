@@ -21,6 +21,8 @@ import { useTranslation } from 'react-i18next';
 import { useParams, useHistory } from 'react-router-dom';
 import { INft } from '../../../interfaces/artwork';
 
+
+
 export interface HeroProps {
     loading?: boolean;
     selectedTheme?: string;
@@ -50,21 +52,21 @@ export const Hero: FC<HeroProps> = ({ ...props }) => {
     return (
         <Grid container>
             {/* HERO: Greetings and button set */}
-            <Grid item xs={12} md={5} pr={isMobile ? 0 : 5}>
+            <Grid item xs={12} md={10} mb={20} mt={15} pr={isMobile ? 0 : 5}>
                 <FlexSpacer minHeight={4} />
 
-                <Typography size="h1" weight="SemiBold" sx={{ pt: 4 }}>
-                    {t('home.hero.headline')}
+                <Typography size="h1" weight="SemiBold" sx={{ pt: 4 }} >
+                    Tezos India Marketplace
                 </Typography>
 
                 <Typography size="h3" weight="Light" sx={{ pt: 2, mb: 1 }}>
-                    {t('home.hero.description_1')}
+                    This is a demo of Kanva.cf
                 </Typography>
 
                 <Typography
                     size="h5"
                     weight="Light"
-                    color="#C4C4C4"
+                    
                     sx={{ pt: 1, mb: 1 }}
                 >
                     {t('home.hero.description_2')}
@@ -79,58 +81,9 @@ export const Hero: FC<HeroProps> = ({ ...props }) => {
                         onClick={() => navigateTo('store')}
                     />
                 </Stack>
-            </Grid>
-
-            {/* HERO: Featured Image */}
+            </Grid>            
             <GridStyled item xs={12} md={7} px={0} sx={{ display: 'flex' }}>
-                {
-                    //Render Skeleton if image not loading
-                    props.sliderLoading ? (
-                        <Skeleton
-                            height="40rem"
-                            width="40rem"
-                            sx={{
-                                transform: 'none',
-                                maxWidth: isMobile ? '100%' : '80%',
-                                marginLeft: 'auto',
-                            }}
-                        />
-                    ) : // Render Slider
-                    imgToVideoToggler ? (
-                        <Slider
-                            loading={props.sliderLoading}
-                            sliderNfts={props.sliderNfts}
-                        />
-                    ) : (
-                        //Render Single image
-                        <Card
-                            sx={{
-                                borderRadius: '1rem',
-                                marginLeft: 'auto',
-                                maxWidth: 750,
-                            }}
-                        >
-                            <CardActionArea>
-                                <ButtonBase
-                                    onClick={() => navigateTo('sign-in')}
-                                >
-                                    <CardMedia
-                                        component="img"
-                                        image="https://uploads-ssl.webflow.com/60098420fcf354eb258f25c5/60098420fcf3542cf38f287b_Illustrations%202019-37.jpg"
-                                        alt="random"
-                                        sx={{
-                                            height: '70vh',
-                                            minHeight: 300,
-                                            maxHeight: 600,
-                                            maxWidth: 750,
-                                            display: isMobile ? 'none' : 'flex',
-                                        }}
-                                    />
-                                </ButtonBase>
-                            </CardActionArea>
-                        </Card>
-                    )
-                }
+                {/* <Typography weight='SemiBold' size='h3'>Rohan</Typography> */}
             </GridStyled>
         </Grid>
     );

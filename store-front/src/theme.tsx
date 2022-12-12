@@ -3,7 +3,7 @@ import { createTheme, PaletteOptions } from '@mui/material/styles';
 
 export const DarkTheme: ITheme = {
     background: {
-        color: '#141414',
+        color: '#1d50b7',
     },
     logo: {
         filter: 'invert(100%)',
@@ -119,11 +119,11 @@ const lightThemePalette: PaletteOptions = {
     },
     text: {
         primary: 'rgba(29, 34, 39, 0.87)',
-        secondary: '#C4C4C4',
+        secondary: 'rgba(29, 34, 39, 0.87)',
         disabled: 'rgba(29, 34, 39, 0.38)',
     },
     background: {
-        default: 'rgba(253, 253, 255, 1)',
+        default: '#F5FFFB',
         paper: 'rgba(255, 255, 255, 1)',
     },
     tonalOffset: 0.05,
@@ -132,7 +132,7 @@ const lightThemePalette: PaletteOptions = {
 
 const darkThemePalette: PaletteOptions = {
     primary: {
-        dark: '#ebebeb',
+        dark: '#1d50b7',
         main: 'rgba(1, 102, 255, 1)',
         light: 'rgba(1, 102, 255, 0.12)',
         contrastText: 'rgb(151, 113, 255)',
@@ -172,7 +172,7 @@ const darkThemePalette: PaletteOptions = {
         disabled: 'rgba(29, 34, 39, 0.38)',
     },
     background: {
-        default: '#0a0a0a',
+        default: '#121212',
         paper: '#202020',
     },
     tonalOffset: 0.05,
@@ -327,7 +327,7 @@ export const darkTheme = createTheme({
         background: '#2c2c2c',
     },
     header: {
-        background: 'rgba(22, 22, 22, 0.5)',
+        background: '#000000',
     },
     footer: {
         background: 'rgba(0, 0, 0, 1)',

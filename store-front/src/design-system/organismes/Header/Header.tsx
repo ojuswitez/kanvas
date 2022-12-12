@@ -37,6 +37,7 @@ const StyledBox = styled(Box)<{ theme?: Theme }>`
 
     box-shadow: ${(props) => props.theme.boxShadow.default};
 
+
     background-color: ${(props) => props.theme.palette.background.default};
     position: sticky;
 
@@ -143,12 +144,14 @@ export const Header: FC<HeaderProps> = ({
 
     return (
         <StyledBox
+            borderBottom="2px solid"
             sx={{
                 height: '4.5rem',
                 display: 'flex',
                 alignItems: 'center',
                 paddingRight: '2rem',
             }}
+        
         >
             <StickyLogo isdisplay={`${!isSearchOpen}`} />
             <Spacer isdisplay={!isSearchOpen} />

@@ -37,7 +37,7 @@ export const Copyright: FC<CopyrightProps> = ({
         >
             {'© '}
             <StyledLink to="/" target="_blank" style={{ margin: '0 .3rem' }}>
-                TZconnect{' '}
+                Rohan{' '}
             </StyledLink>
             {` ${new Date().getFullYear()}`}
         </Typography>
